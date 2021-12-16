@@ -1,0 +1,345 @@
+<!DOCTYPE HTML>
+<!--
+	Escape Velocity by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>company Symposium 2020</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="stylesheets/main.css" />
+		<style>
+			 
+			#webchat {
+				height: 460px;
+				width: 100%;
+				border-bottom-left-radius: 5px;
+				border-bottom-right-radius: 5px;
+			}
+
+			#webchat ul{
+				text-align: left;
+			}
+
+			#webchat button:hover{
+				background-color: transparent !important;
+			}
+			.css-115fwte{
+				margin-left: -60%;
+				width: 10px !important;
+				padding-left:0 !important;
+			}
+    
+        	/*.main{
+            	max-height:60px;
+    		}*/
+			.css-1fe8kfc, [data-css-1fe8kfc] {
+				flex: 50000 1 0%;
+			}
+			.main input[type=text]{
+				width: 350px;
+				height:50px;
+				margin-top: 30px;
+					
+			}
+			@media (max-width: 767px) {
+				.main input[type=text]{
+					width: 250px;
+					height:50px;
+					margin-top: 30px;
+				}
+				.css-115fwte{
+					margin-left: -35%;
+					width: 10px !important;
+					padding-left:0 !important;
+				}
+			}
+			#webchat a{
+				color: blue;
+			}
+
+			.bot header{
+				background: #174C73;
+				font-size: 16px;
+				color: white;
+				font-weight: bold;
+				padding: 8px 0;
+				border-top-left-radius: 6px;
+				border-top-right-radius: 6px;
+
+			}
+			
+			#logo img{width: 50%;}
+			@media (max-width: 767px) {
+				#logo img{width: 80%;}
+
+			}
+	
+			.commands {
+				text-align: left;
+				background: #1B75BC;
+				font-size: 12px;
+				border-radius: 15px;
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			}
+
+			#intro{
+				min-height: 60vh;
+			}
+			#main{
+				min-height: 75vh;
+			}
+
+			.logged{
+				text-align: left !important;
+			}
+
+			.beginning > .commands{
+				padding: 15px 5px 0 15px !important;
+				margin-left: -20px;
+			}
+			.beginning > .bot{
+				padding: 0!important;
+				margin-left:15px;
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			}
+
+			.css-n2zczk{
+				padding-top: 1px !important;
+				padding-bottom: 1px !important;
+			}
+			.boxInitial{
+				background: #1B75BC;
+				border-radius: 15px;
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+				font-size: 16px;
+			}
+			table{
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+				color: black;
+			}
+			.list-unstyled{
+				font-size: 16px;
+			}
+			form{
+				padding:2em 0 2em 0;
+			}
+
+			.attendees tr:nth-child(even) {background-color: #e2dddd;}
+			.attendees tr:nth-child(odd) {background-color: #cccccc;}
+
+			th{
+				font-weight: bold;
+			}
+
+			.copied{
+				font-size: 10px;
+				font-weight: lighter;
+			}
+
+			.agenda{
+				background-color: #174C73;
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+				color: white;
+				border-radius: 15px;
+				padding:5em;
+				margin-left:3.5em;
+				margin-right: 2em;
+				margin-top: 2em;
+				text-align: center;
+			}			
+			.align-left{
+				text-align: left;
+			}
+			.colorBlue{
+				color: #174C73 !important;
+			}
+
+			
+
+		</style>
+		<script src="https://kit.fontawesome.com/ec21a1bcdc.js" crossorigin="anonymous"></script>
+
+		 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+      integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+	</head>
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header" class="wrapper">
+
+					<!-- Logo -->
+					{{#if user}}
+					<div id="logo">
+						<a href="/"><img src="images/company.png" alt="" /></a> 
+						{{!-- <p>Register, See the agenda and Download the material</p> --}}
+					</div>
+					{{else}}
+					<div id="logo" style="top:0 !important;">
+						<a href="/"><img src="images/company.png" alt="" /></a> 
+						{{!-- <p>Register, See the agenda and Download the material</p> --}}
+					</div>
+					{{/if}}
+
+
+					<!-- Nav -->
+					{{#if user}}
+					{{#if authorized}}
+					<nav id="nav">
+						<ul>
+							<li class="current"><a href="/">Welcome</a></li>
+							<li><a href="/registration">Registration</a></li>
+							{{!-- {{#if userExists}} --}}
+							<li><a href="/attendees">Who's Attending</a></li>
+							<li><a href="/resources">Resources</a></li>
+						
+							{{!-- <li><a href="no-sidebar.html">No Sidebar</a></li> --}}
+							{{!-- {{/if}} --}}
+							<li>
+								<a href="/auth/signout">{{ user.displayName }} -> Log Out</a>
+							</li>
+							
+						</ul>
+						
+					</nav>
+					{{/if}}
+					{{/if}}
+					
+				</section>
+
+			<!-- Intro -->
+				
+           {{{body}}}
+					
+		
+
+			<!-- Footer -->
+			<section id="footer">
+					<div id="copyright">
+						&copy; company Inc.
+					</div>
+			</section>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="javascripts/jquery.min.js"></script>
+			<script src="javascripts/jquery.dropotron.min.js"></script>
+			<script src="javascripts/browser.min.js"></script>
+			<script src="javascripts/breakpoints.min.js"></script>
+			<script src="javascripts/util.js"></script>
+			<script src="javascripts/main.js"></script>
+
+
+	{{!-- <script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script> --}}
+	<script src="https://cdn.botframework.com/botframework-webchat/4.7.1/webchat-es5.js"></script>
+	 <script>
+
+		 //var clientEmail = JSON.stringify("{{user}}");
+		var decodedJson = decodeURIComponent("{{{encodedJson}}}");
+  		var jsonObj = JSON.parse(decodedJson);
+		  //console.log(jsonObj);
+		  var clientName = jsonObj.displayName;
+		  var clientEmail = jsonObj.mail;
+		  console.log(jsonObj);
+		 console.log(clientEmail);
+		 console.log(clientName);
+		//(async function () {
+
+		 $.ajax({
+			type: "POST",
+			url: 'https://directline.botframework.com/v3/directline/tokens/generate',
+			 headers: {
+            'Authorization': 'Bearer ' + "ub4EVZRWlJw.8Ko3mO44PIiMMufeuE54Pm2lBckrykQZ0VgJXKVsoYg"
+        	}
+		}).then(function(error, response, body) {
+			console.log("response");
+			console.log(response);
+			console.log(body);
+			var names = ["S", "U"];
+			if(jsonObj.displayName){
+				names = clientName.split(" ");
+			}
+			const styleOptions = {
+				botAvatarInitials: 'LB',
+				userAvatarInitials: names[1].charAt(0)+names[0].charAt(0), 
+
+				hideSendBox: false,
+				hideUploadButton: true, // doesn't seem to work
+				sendBoxButtonColor: '#767676',
+				sendBoxButtonColorOnFocus: '#333',
+				sendBoxButtonColorOnHover: '#333',
+				sendBoxBorderBottom: '',
+				sendBoxBorderLeft: '',
+				sendBoxBorderRight: '',
+				sendBoxBorderTop: 'solid 1px #E6E6E6',
+				sendBoxHeight: 40
+			};
+
+
+			 // We are using a customized store to add hooks to connect event
+        const store = window.WebChat.createStore({},  function (_ref) {
+          const dispatch = _ref.dispatch;
+            return function (next) {
+              return function (action) {
+                  if (action.type === 'DIRECT_LINE/CONNECT_FULFILLED') {
+            dispatch({
+              type: 'WEB_CHAT/SEND_EVENT',
+              payload: {
+                // Event starting bot's welcome dialog
+                name: 'webchat/join',
+                value: { language: window.navigator.language }
+              }
+            });
+          }
+          return next(action);
+		  };
+            };
+ 
+        });
+
+
+
+			window.WebChat.renderWebChat(
+            {
+               directLine: window.WebChat.createDirectLine({
+                  token: body.responseJSON.token
+               }),
+			   store: store,
+               userID: clientEmail,
+               username: clientName,
+               locale: 'en-US',
+			   styleOptions: styleOptions
+            },
+            document.getElementById('webchat'));	
+		});
+		$('#webchat > *').focus();
+
+		function copy(input, span) {
+			var $temp = $("<input>");
+			$("body").append($temp);
+			$temp.val(input).select();
+			document.execCommand("copy");
+			$temp.remove();
+
+			document.getElementById(span).innerHTML = 'Copied';
+			setTimeout(function(){document.getElementById(span).innerHTML = ''}, 2000)
+		}
+         //}
+		 //)().catch(err => console.error(err));
+      </script>
+
+	</body>
+</html>

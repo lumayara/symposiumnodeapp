@@ -1,0 +1,42 @@
+{
+  "name": "symposiumapp",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "@azure/cosmos": "^3.5.3",
+    "@microsoft/microsoft-graph-client": "^1.7.0",
+    "@pnp/common": "^1.3.8",
+    "@pnp/logging": "^1.3.8",
+    "@pnp/nodejs": "^1.3.8",
+    "@pnp/odata": "^1.3.7",
+    "@pnp/sp": "^1.3.7",
+    "azure-storage": "^2.10.3",
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^8.1.0",
+    "dropbox": "^4.0.30",
+    "express": "~4.16.1",
+    "express-session": "^1.16.2",
+    "firebase-admin": "^8.9.1",
+    "firestore-store": "^2.0.1",
+    "handlebars": "^4.5.3",
+    "hbs": "~4.0.4",
+    "http-errors": "~1.6.3",
+    "isomorphic-fetch": "^2.2.1",
+    "moment": "^2.24.0",
+    "morgan": "~1.9.1",
+    "nodemailer": "^4.6.5",
+    "passport-azure-ad": "^4.1.0",
+    "path": "^0.12.7",
+    "pug": "^2.0.4",
+    "simple-oauth2": "^2.4.0"
+  },
+  "devDependencies": {
+    "nodemailer": "^4.6.5"
+  }
+}

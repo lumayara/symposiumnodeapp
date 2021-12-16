@@ -1,0 +1,91 @@
+<section id="intro" class="wrapper style1">
+	<div class="title">Welcome</div>
+		
+		{{#if user}}
+		{{#if authorized}}
+		<!-- Features -->
+		<br>
+		<div class="container">
+		<div class="row beginning">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-7 commands">
+					<header class="style1 logged">
+						<h4>Hi, {{user.displayName}}!</h4>
+						<h5>My name is companySympo. I'm a chatbot here to help you with your registration, or other inquiries about the Symposium. I am trained to assist you with the following commands. Feel free to copy each command to your clipboard by clicking the icon next to each command, and then pasting it on the chatbot.</h5>
+						{{!-- <h5>My name is companySympo. I can help you with registration, submitting questions, or even general inquiries about the Symposium. I am currently trained to assist you with the following commands:</h5> --}}
+
+					</header>
+					<br/>
+						<h5>
+						- RSVP for Event <a href="javascript:copy('RSVP for Event', 'rsvpCopied')"><i class="fas fa-copy"></i></a> <span id="rsvpCopied" class="copied"></span></br></br>
+						- Cancel my Registration​ <a href="javascript:copy('Cancel my Registration​', 'cancelCopied')"><i class="fas fa-copy"></i></a> <span id="cancelCopied" class="copied"></span></br></br>
+						- Who is attending <a href="javascript:copy('Who is attending', 'attendCopied')"><i class="fas fa-copy"></i>​</a> <span id="attendCopied" class="copied"></span></br></br>
+						- Event location and time <a href="javascript:copy('Event location and time', 'locationCopied')"><i class="fas fa-copy"></i>​</a> <span id="locationCopied" class="copied"></span></br></br>
+						- Add event to my calendar <a href="javascript:copy('Add event to my calendar', 'calendarCopied')"><i class="fas fa-copy"></i>​</a> <span id="calendarCopied" class="copied"></span></br></br>
+						- Question for company <a href="javascript:copy('Question for company', 'questionCopied')"><i class="fas fa-copy"></i></a> <span id="questionCopied" class="copied"></span>
+						</h5>
+
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 bot">
+				<header><i class="fas fa-robot"></i> &nbsp;companySympo</header>					
+				<div id="webchat" role="main"></div>
+			</div>										
+		</div>
+		</section>
+		<section class="wrapper style2">
+			
+			<div class="title">Agenda</div>
+			<div class="container">
+			<div class="row agenda-bullets">
+				<div class="col-xs-5 col-sm-3 col-md-3 col-lg-3 agenda">12:30 PM<br>Arrival/Networking</div>
+				<div class="col-xs-5 col-sm-3 col-md-3 col-lg-3 agenda">1:00 PM - 1:20 PM<br>Kick Off &amp; Welcome Message</div>
+				<div class="col-xs-5 col-sm-3 col-md-3 col-lg-3 agenda">1:20 PM - 3:00 PM<br>Booth Talks &amp; Networking</div>
+		
+				<div class="col-xs-5 col-sm-3 col-md-3 col-lg-3 agenda">3:00 PM - 3:45 PM<br>Breakouts</div>
+				<div class="col-xs-5 col-sm-3 col-md-3 col-lg-3 agenda">3:45 PM - 5:00 PM<br>Booth Talks &amp; Networking</div>
+				<div class="col-xs-5 col-sm-3 col-md-3 col-lg-3 agenda">5:00 PM<br>Closing</div>
+			</div>
+		</section>
+		<section class="wrapper style1 colorBlue">
+			
+		<div class="title">Topics of Discussion</div>
+		<div class="container">
+				<h5 style="color:#174C73">During this year’s Symposium, we are planning to cover a number of implementations completed for our NIH partners. Additional topics of interest are currently being evaluated by our CAPEX R&amp;D team.</h5>
+				<p><b style="color:#174C73">Managed Infrastructure &amp; Operations/Cybersecurity</b><br/>OpenStack Private Cloud, Azure Disaster Recovery, ServiceNow ITOM, Splunk, Infrastructure as Code, Cohesity, Cylance </p>
+				<p><b style="color:#174C73">Application Services </b>
+				<br/>Drupal 8, USWDS, PowerBI, QLIKVIEW, CI/CD, SharePoint Online, SharePoint Framework</p>
+				<p><b style="color:#174C73">Grants Services</b><br>Logistics - Onsite Review, Online Review, Hybrid Review Process</p>
+				<p><b style="color:#174C73">Consulting Services</b><br/>PMO/Portfolio Mgmt​, PMO Dashboards, CIO Dashboards, Strategic Planning, Training</p>
+				<p><b style="color:#174C73">Digital Transformation</b><br/>PowerApps, Power Automate, AzureDevOps, AI, ChatBot</p>
+		</div>
+		</section>
+		
+		{{else}}
+		<div class="container boxInitial">			
+				<h4>You are not an authorized user.</h4>
+				<p>Please login with your "NIHusername@nih.gov" or "NIHusername@agency.nih.gov" to proceed to the company Symposium 2020. Here you will be able to RSVP to the event, view the agenda, who else is attending, ask us questions before the event and access presentations, and Symposium relevant information.</p>
+				<p>Please contact chanaka.perera@companyinc.com if you have any questions.</p>
+				<a href="/auth/signout" style="color:blue;">Please click here to go back to the Login Page</a>
+		</div>
+			{{/if}}
+		{{else}}
+		<br>
+		<div class="container boxInitial">
+			<header class="style1">
+				{{!-- <h2>Welcome to the company I&amp;T Symposium 2020!</h2> --}}
+				<h2>Welcome to the company Symposium 2020!</h2>
+			</header>
+			</br><p>
+			We have simplified the registration process by integrating Office 365 and your NIH Login.<br>
+			Please login with your "NIHusername@nih.gov" or "NIHusername@agency.nih.gov" to proceed to the Symposium registration portal. 
+			From the registration page, you will be able to RSVP to the event, view the agenda, see who has already registered, 
+			ask questions before the event, and access all of the presentations and Symposium relevant information.</p>
+		
+			<a class="login" href="/auth/signin"><i class="fab fa-windows"></i> Sign in with Office 365</a>
+			<br/>
+			<br/>
+			<p>company Employees, Please sign-in with your Office 365 Account - firstname.lastname@companyinc.com</p>
+			
+			<br/>
+		</div>
+		{{/if}}
+</section>

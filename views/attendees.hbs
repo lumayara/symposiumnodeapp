@@ -1,0 +1,39 @@
+ <section id="main" class="wrapper style1">
+	<div class="title"><a name="attendees"></a>Who's Attending</div>
+	
+	<div class="container">
+		{{#if user}}
+		{{#if authorized}}
+			<table class="table attendees">
+			<thead>
+				<tr style="background: rgb(48, 103, 143) !important;">
+				{{!-- <th scope="col">#</th> --}}
+				<th scope="col">Name</th>
+				<th scope="col">Agency</th>
+				</tr>
+			</thead>
+			<tbody>
+				{{#each items}}
+				<tr>
+				{{!-- <td>{{key}}</td> has an at sign before key--}}
+				<td>{{this.name}}</td>
+				<td>{{this.agency}}</td>
+				</tr>
+				{{/each}}
+			</tbody>
+			</table>
+			{{else}}
+					<h4>You are not an authorized user.</h4>
+					<p>Please login with your company or with your "NIHusername@nih.gov" or "NIHusername@agency.nih.gov" credentials.</p>
+					<p>Please contact chanaka.perera@companyinc.com if you would like to RSVP by email.</p>
+						
+					<a href="/auth/signout" style="color:blue;">Please click here to LOG OUT</a>	
+			{{/if}}
+			{{else}}
+      <center><h3>You need to be logged in to access this page.</h3></center>
+      <a href="https://companysymp2020.azurewebsites.net/" style="color:blue;">Please click here to LOG IN</a>
+      <br/><br/><br/>
+
+		{{/if}}
+    </div>
+</section>

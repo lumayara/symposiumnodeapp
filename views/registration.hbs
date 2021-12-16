@@ -1,0 +1,49 @@
+{{#if user}}
+  {{#if authorized}}
+<section id="main" class="wrapper style1">
+  <div class="title"><a name="registration"></a>Registration</div>
+  <div class="container boxInitial">
+
+  <form action="/" method="post">
+    <fieldset>
+      <label>Agency:</label>
+      <input type="text" name="agency">
+      <br>
+      <label>What are your topics of interest?</label>
+      <input type="text" name="interests">
+      <br>
+      <label>RSVP:</label>
+      <input type="radio"  name="rsvp" value="yes" style="border:1px black; -webkit-appearance: radio; transform: scale(1.5);"> &nbsp;Yes
+      <br><input type="radio" name="rsvp" value="no" style="border:1px black; -webkit-appearance: radio; transform: scale(1.5);"> &nbsp;No
+      <br>
+      <br><br>
+      <input type="submit" value="Register">
+    </fieldset>
+  </form>
+
+  </div>
+</section>
+{{else}}
+  <section id="intro" class="wrapper style1">
+    <div class="title">Registration</div>
+  <div class="container">
+  
+      <h4>You are not an authorized user.</h4>
+      <p>Please login with your company or your "NIHusername@nih.gov" or "NIHusername@agency.nih.gov" credentials.</p>
+      <p>Please contact chanaka.perera@companyinc.com if you would like to RSVP by email.</p>
+          
+      <a href="/auth/signout" style="color:blue;">Please click here to LOG OUT</a>
+            
+  </div>
+  </section>
+{{/if}}
+{{else}}
+<section id="main" class="wrapper style2">
+  <div class="title"><a name="registration"></a>Registration</div>
+    <div class="container">
+      <center><h3>You need to be logged in to access this page.</h3></center>
+      <a href="https://companysymp2020.azurewebsites.net/" style="color:blue;">Please click here to LOG IN</a>
+      <br/><br/><br/>
+  </div>
+</section>
+{{/if}}

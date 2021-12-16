@@ -1,0 +1,71 @@
+{{#if user}}
+{{#if authorized}}
+<section id="main" class="wrapper style1">
+  <div class="title"><a name="resources"></a>Resources</div>
+  <br>
+  <br>
+  <div class="container">
+    <div class="row">
+			<div class="col-12 col-12-medium commands">
+        <!-- <h4>Slides</h4>
+        <table class="table">
+         
+          <tbody>
+            {{#each slides}}
+            <tr>
+            <td><a href="{{this.link}}" target="_blank"><i class="far fa-file-powerpoint"></i> {{this.name}}</a></td>
+            </tr>
+            {{/each}}
+          </tbody>
+        </table>
+      </div>
+      <div class="col-6 col-12-medium commands">
+          <h4>PDFs</h4>
+          <table class="table">
+          {{!-- <thead>
+            <tr>
+            <th scope="col">Name</th>
+            </tr>
+          </thead> --}}
+          <tbody>
+            {{#each pdfs}}
+            <tr>
+            <td><a href="{{this.link}}" target="_blank"><i class="fas fa-file-pdf"></i> {{this.name}}</a></td>
+            </tr>
+            {{/each}}
+          </tbody>
+        </table> -->
+        <ul class="list-unstyled">
+           {{#each files}}
+          <li><a href="{{this.link}}" target="_blank"><i class="fas fa-file"></i> {{this.name}}</a></li>
+          <br>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+{{else}}
+  <section id="intro" class="wrapper style1">
+    <div class="title">Resources</div>
+  <div class="container">
+  
+      <h4>You are not an authorized user.</h4>
+      <p>Please login with your company or with your "NIHusername@nih.gov" or "NIHusername@agency.nih.gov" credentials.</p>
+      <p>Please contact chanaka.perera@companyinc.com if you would like to RSVP by email.</p>
+          
+      <a href="/auth/signout" style="color:blue;">Please click here to LOG OUT</a>
+            
+  </div>
+  </section>
+{{/if}}
+{{else}}
+<section id="main" class="wrapper style2">
+  <div class="title"><a name="resources"></a>Resources</div>
+    <div class="container">
+      <center><h3>You need to be logged in to access this page.</h3></center>
+      <a href="https://companysymp2020.azurewebsites.net/" style="color:blue;">Please click here to LOG IN</a>
+      <br/><br/><br/>
+  </div>
+</section>
+{{/if}}
